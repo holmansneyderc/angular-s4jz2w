@@ -1,0 +1,36 @@
+<h4>Por favor presione las siguientes combinaciones de teclas, cada que efectúe una acción definida el sistema lo guiara a la siguiente tarea.</h4>
+<br>
+<div id="contact-details" [formGroup]="regForm">
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + C</label>
+    <input (keydown)="input1f($event)"  (keyup)="input1fup($event)"  type="text"  #input1  class="form-control" formControlName="f1">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + B</label>
+    <input  (keydown)="input2f($event)" (keyup)="input2fup($event)"  type="text"  #input2  class="form-control" formControlName="f2">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + Shift + L</label>
+    <input (keydown)="input3f($event)" (keyup)="input3fup($event)"   type="text"  #input3  class="form-control" formControlName="f3">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + alt + O</label>
+    <input (keydown)="input4f($event)" (keyup)="input4fup($event)"   type="text"  #input4  class="form-control" formControlName="f4">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + alt + Suprimir</label>
+    <input (keydown)="input5f($event)" (keyup)="input5fup($event)"   type="text"  #input5  class="form-control" formControlName="f5">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Cmd + I</label>
+    <input (keydown)="input6f($event)" (keyup)="input6fup($event)"   type="text"  #input6  class="form-control" formControlName="f6">
+  </div>
+  <div class="form-group col-md-9" formGroupName="contactDetails1">
+    <label>Shift + E</label>
+    <input (keydown)="input7f($event)" (keyup)="input7fup($event)"   type="text"  #input7  class="form-control" formControlName="f7">
+  </div>
+</div>
+<br/>
+<button type="button" matStepperPrevious>Back</button>
+&nbsp;
+<button type="button" matStepperNext (click)="step2Submitted()">Next</button>

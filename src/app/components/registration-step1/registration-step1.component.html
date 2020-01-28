@@ -1,0 +1,22 @@
+<h4>Para esta tarea la intencion es que transcriba la frase que se encuentra encima del campo de texto, teniendo en cuenta las tildes y singnos de puntuacion, una vez haya digitado y verificado la frase la aplicación lo guiara por el recorrido de las tareas.</h4>
+<br>
+<div id="personal-details" [formGroup]="regForm">
+  <div class="form-group col-md-9" formGroupName="personalDetails1">
+    <label>el sapo de mi casa come queso, zapallo y xoubas</label>
+    <input (keyup)="input1f($event)" #input1 type="text" class="form-control" formControlName="f1">
+  </div>
+  <div class="form-group col-md-9" formGroupName="personalDetails1">
+    <label>en un pueblo un niño juega afuera y tu vejez es notable</label>
+    <input (keyup)="input2f($event)" #input2 type="text" class="form-control" formControlName="f2">
+  </div>
+  <div class="form-group col-md-9" formGroupName="personalDetails1">
+    <label>la leña esta partida, la tijera se ha roto, yo quiero jugar y <b>reír</b>, dale a la gata sus gatitos y las fresas y
+      las patatas del huerto</label>
+    <input (keyup)="input3f($event)" #input3 type="text" class="form-control" formControlName="f3">
+  </div>
+  <div class="form-group col-md-9" formGroupName="personalDetails1">
+    <label>la vaca flaca, las lañas malvas, las jacas blancas, a la sal acabas la salsa, zancada flaca</label>
+    <input (keyup)="input4f($event)" #input4 type="text" class="form-control" formControlName="f4">
+  </div>
+</div>
+<br />
